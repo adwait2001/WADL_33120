@@ -1,0 +1,66 @@
+.carousels{
+    margin-left: 20px;
+    margin-top: 100px;
+}
+
+.projects{
+    display: flex;
+
+}
+
+.proj_img{
+    width: 500px;
+    height: 300px;
+    margin-left: 150px;
+}
+
+.proj_desc{
+    height: 120px;
+    width: 500px;
+    margin-top: 100px;
+    margin-left: -120px;
+    background-color: rgba(2,12,27,0.7)
+}
+
+.proj_para{
+    margin-top: 20px;
+    margin-left: 40px;
+    color: white;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.proj_head{
+    margin-top: 20px;
+    color: white;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    margin-left: -70px;
+}
+
+
+.proj_stack{
+    margin-top: 50px;
+    margin-left: 30px;
+    color: white;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: medium;
+}
+
+.linkedin{
+    color: white;
+    margin-left: 400px;
+    margin-top: 70px;
+    font-size: larger;
+}
+
+.linkedin a{
+   cursor: pointer;
+}
+
+.linkedin i{
+    margin-left: 20px;
+}
+
+.icon-font{
+    font-size: 1.5em;
+    margin-right: 1em;
+}

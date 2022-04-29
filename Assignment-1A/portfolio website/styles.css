@@ -1,0 +1,325 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=La+Belle+Aurore&family=Mochiy+Pop+P+One&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+ }
+ 
+ body {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #333;
+ }
+ 
+ h1 {
+   font-size: 1.4em;
+ }
+ 
+ em {
+    font-style: normal;
+ }
+ 
+ a {
+    text-decoration: none;
+    color: inerit;
+ } 
+ 
+.logo{
+   width: 30%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-bottom: 70px;
+   border-bottom: 1px solid #282828;
+}
+
+ .layout {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+ }
+ 
+ .content {
+    background: #1d1d1d;
+    margin-left: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+ }
+ 
+ .trigger {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4em;
+    background: #192b3c;
+ }
+ 
+ .trigger > i {
+    display: inline-block;
+    margin: 1.5em 0 0 1.5em;
+    color: #f07ab0;
+ }
+ 
+ .nav {
+    position: fixed;
+    top: 0;
+    left: -15em;
+    overflow: hidden;
+    transition: all .3s ease-in;
+    width: 15em;
+    height: 100%;
+    background: #243e56;
+    color: rgba(255, 255, 255, 0.7);
+ }
+ 
+ .nav:hover,
+ .nav:focus,
+ .trigger:focus + .nav,
+ .trigger:hover + .nav {
+    left: 0;
+ }
+ 
+ .nav ul {
+    position: absolute;
+    top: 4em;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 15em;
+ }
+ 
+ .nav ul li {
+    width: 100%;
+    border-bottom: 1px solid #282828;
+ }
+ 
+ .nav-link {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 4em;
+    color: white !important;
+ }
+ 
+ .nav-link em {
+    position: absolute;
+    top: 50%;
+    left: 4em;
+    transform: translateY(-50%);
+ }
+ 
+ .nav-link:hover {
+    background: #4d6276;
+ }
+ 
+ .nav-link > i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+ }
+ 
+ .nav-link > i::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+ 
+ @media (min-width: 42em) {
+    .s-layout__content {
+       margin-left: 4em;
+    }
+    
+    .trigger {
+       width: 4em;
+    }
+    
+    .nav {
+       width: 4em;
+       left: 0;
+    }
+    
+    .nav:hover,
+    .nav:focus,
+    .trigger:hover + .nav,
+    .trigger:focus + .nav {
+       width: 15em;
+    }
+ }
+ 
+ @media (min-width: 68em) {
+    .s-layout__content {
+       margin-left: 15em;
+    }
+    
+    /* Sidebar */
+    .trigger {
+       display: none
+    }
+    
+    .nav {
+       width: 15em;
+    }
+    
+    .nav ul {
+       top: 1.3em;
+    }
+
+   
+ }
+ 
+
+ .trans{
+    background-color: transparent;
+    width: 150px;
+ }
+
+ .name{
+    font-size: 25px;
+    font-weight: 900;
+    padding-top: 20px;
+    padding-bottom: 20px;
+ }
+
+ .role{
+    font-size: 16px;
+    font-weight: 600;
+ }
+
+ .socials{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .socials i{
+    width: 40px;
+ }
+
+ .text{
+    margin-top: 50px;
+ }
+
+ .heading{
+    padding-left: 100px;
+ }
+
+ .text:after {
+   content: '<html/>';
+   font-family: 'La Belle Aurore',cursive;
+   color: #515152;
+   font-size: 18px;
+   padding-left: 50px;
+}
+
+.heading::before {
+   content: '<body>';
+   font-family: 'La Belle Aurore',cursive;
+   color: #515152;
+   font-size: 18px;
+   padding-left: 10px;
+}
+
+.heading::after {
+   content: '<body/>';
+   font-family: 'La Belle Aurore',cursive;
+   color: #515152;
+   font-size: 18px;
+   padding-left: 10px;
+}
+
+.description::before {
+   content: '<p>';
+   font-family: 'La Belle Aurore',cursive;
+   color: #515152;
+   font-size: 18px;
+   padding-left: 50px;
+}
+
+.description::after {
+   content: '<p/>';
+   font-family: 'La Belle Aurore',cursive;
+   color: #515152;
+   font-size: 18px;
+   padding-left: 50px;
+}
+
+.box{
+   color: white;
+   font-weight: 900;
+   font-size: 3.3rem;
+
+   font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.main_Img{
+   margin-top: 100px;
+   width: 450px;
+   height: 450px;
+   margin-right: 100px;
+}
+
+.description{
+   color: white;
+   font-weight: 800;
+}
+
+.job_desc{
+   padding-left: 100px;
+   font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.action{
+   margin-left: 20px;
+   margin-left: 100px;
+   padding-left: 150px !important;
+   padding-right: 150px !important;
+   display: flex;
+   font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.action2{
+   margin-top: 50px;
+}
+
+.action2::before {
+   content: '<btn>';
+   font-family: 'La Belle Aurore',cursive;
+   color: #515152;
+   font-size: 18px;
+   padding-left: 80px;
+}
+
+.action2::after {
+   content: '<btn/>';
+   font-family: 'La Belle Aurore',cursive;
+   color: #515152;
+   font-size: 18px;
+   padding-left: 80px;
+}
+
+
+@media (max-width: 66em){
+   .content{
+      margin-left: 0px;
+      height: 1300px;
+   }
+
+   .logo{
+      display: none;
+   }
+   
+}
+.font-colour{
+   color: white !important;
+}

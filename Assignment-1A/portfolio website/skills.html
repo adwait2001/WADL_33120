@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <title>Adwait Portfolio</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+</style>
+
+<body>
+
+    <div class="layout">
+        <div class="sidebar">
+            <a class="trigger" href="#0">
+                <i class="fa fa-bars"></i>
+            </a>
+
+
+
+            <nav class="nav">
+
+                <ul>
+                    <li class="logo">
+                        <img class="trans" src="./a.png" />
+                        <span class="name"><em>Adwait D</em></span>
+                        <span class="role"><em>Web Developer</em> </span>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./home.html">
+                            <i class="fa fa-home"></i><em>Home</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="/about.html">
+                            <i class="fa fa-user"></i><em>About Me</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./skills.html">
+                            <i class="fa fa-camera"></i><em>Skills</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./projects.html">
+                            <i class="fa fa-camera"></i><em>Projects</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./contact.html">
+                            <i class="fa fa-camera"></i><em>Contact Me</em>
+                        </a>
+                    </li>
+                    <li class="socials">
+                        <i class="fa fa-linkedin"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-github"></i>
+
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <main class="content">
+            <div class="container">
+                <div class="flexx">
+                    <div>
+                        <div class="text">
+
+                        </div>
+                        <div class="heading">
+                            <h1 class="box2">
+                                <p>Skills</p>
+                            </h1>
+                        </div>
+                        <div class="description">
+                            <h5 class="job_desc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I have full stack web development
+                                experiences <br /> using multiple Popular Stacks like
+                                MERN <br /> (MongoDB,Express,React,NodeJS) and Django <br /> Rest framework. I have also
+                                deployed my <br /> applications on platforms like AWS,Digital Ocean <br /> and Heroku
+                            </h5>
+                            <h5 class="job_desc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I'm Full stack Web developer pursuing my
+                                B.E <br /> from Pune institute
+                                of Computer Technology,Pune. <br /> I have worked on various full stack
+                                applications<br /> and
+                                I'm always willing to learn new Technologies<br /> and gain knowledge.
+                            </h5>
+                        </div>
+                        <div class="body">
+
+                        </div>
+                        <div class="text">
+
+                        </div>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="bar">
+                            <div class="info">
+                                <span>React</span>
+                            </div>
+                            <div class="progress-line html">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span>Django</span>
+                            </div>
+                            <div class="progress-line css">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span>Node.js</span>
+                            </div>
+                            <div class="progress-line jquery">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span>Python</span>
+                            </div>
+                            <div class="progress-line python">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="progress-line mysql">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="chart">
+                            <h2>Skills Share</h2>
+                            <div>
+                                <canvas id="myChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+    <script>
+        var ctx = document.getElementById("myChart").getContext('2d');
+        var myChart = new Chart(ctx,{
+            type: 'pie',
+            data: {
+                labels: ["Javascript", "Python", "Node", "React.js", "Django", "MongoDb", "Postgres"],
+                datasets: [{
+                    backgroundColor: [
+                        "#2ecc71",
+                        "#3498db",
+                        "#95a5a6",
+                        "#9b59b6",
+                        "#f1c40f",
+                        "#e74c3c",
+                        "#34495e"
+                    ],
+                    data: [20, 8, 18, 25, 20, 7, 7]
+                }]
+            }
+        });
+    </script>
+</body>
+
+</html>

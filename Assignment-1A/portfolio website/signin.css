@@ -1,0 +1,94 @@
+* {
+            padding: 0;
+            margin: 0;
+            /*box-size:border-box;*/
+        }
+        body {
+            background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+        }
+        #container {
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 150px;
+        }
+        .tabs {
+            display: table-cell;
+            width: 30%;
+            background-color: #ffffff;
+            padding: 10px;
+            float: left;
+            text-align: center;
+            vertical-align: middle;
+            border: 2px solid #ffffff;
+            border-bottom: 0px;
+            position: relative;
+            font-size: 1.3em;
+        }
+        .tabs:hover, p{
+            cursor: pointer;
+        }
+
+        #lt {
+            background:rgba(11, 177, 224, 0.82);
+        }
+
+        /*
+        #rt {
+            background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+        } */
+        #cont {
+            width: 100%;
+            height: 300px;
+            background-color: white;
+            border: 2px solid #ffffff;
+        }
+
+        input{
+            display: block;
+            width: 250px;
+            margin: 10px 13px;
+            padding: 10px;
+            font-size: 1.3em;
+            /* color: rgba(11, 177, 224, 0.82); */
+            outline: 2px solid #ffffff;
+        }
+
+        input[type="submit"] {
+            width: 272px;
+            color: #0275d8;
+        }
+
+        #clear {
+            clear: both;
+        }
+
+        .comm {
+            position: absolute;
+            visibility: hidden;
+        }
+        #login {
+            visibility: visible;
+        }
+
+        h3 {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 10px 15px;
+            font-size: 1.5em;
+            
+        }
+
+        #forgot h3 {
+            display: block;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        #forgot div {
+            margin-top: 30px;
+        }
+        p {
+            padding: 10px 15px;
+            font-size: 1.3em;
+        }
+      
